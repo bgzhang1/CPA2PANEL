@@ -3,6 +3,7 @@
 一个面向 `CLIProxyAPI` 的轻量账号面板，提供公开只读看板、管理员模式、额度查询、Usage 仪表盘、模型价格配置与缓存快照能力。
 
 项目由一个 Node.js 单文件后端和一个纯静态前端组成，适合以 `docker compose` 方式快速部署。
+<img width="2960" height="1555" alt="image" src="https://github.com/user-attachments/assets/a9669d30-54d5-4522-b87d-c6ed63f6c6b5" />
 
 ## 功能概览
 
