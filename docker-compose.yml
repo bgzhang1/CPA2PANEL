@@ -1,0 +1,17 @@
+services:
+  cliproxy-sub2-panel:
+    image: node:20-alpine
+    container_name: cliproxy-sub2-panel
+    restart: unless-stopped
+    working_dir: /app
+    command: ["node", "/app/server.js"]
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "8320:80"
+    volumes:
+      - ./site:/app/site:ro
+      - ./server.js:/app/server.js:ro
+      - ./data:/data
+      - ../cli-proxy-api-cn/config.yaml:/config/cli-proxy-api.yaml:ro
+      - ../cli-proxy-api-cn/auths:/auths
